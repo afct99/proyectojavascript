@@ -1,8 +1,28 @@
 <html>
 <head>
     <title>Hello, World</title>
+    <script type="text/javascript">
+    var total = 0
+    function ciclo(hasta){/*for (var i = 1; i<=hasta; i++) {
+            total = total + i
+            }*/
+            total = (hasta+1) * (hasta/2);
+            console.log(total);
+        };
+        function recorrer(){
+            var numero = document.getElementById("numero").value;
+            ciclo(numero);
+            console.log(numero);
+        };
+        /* var nombre = "Angel Cordero"
+        console.log(nombre);
+        alert(nombre);
+        ciclo(1000);*/
+        </script>
 </head>
 <body>
+    <input id="numero">
+    <button onclick="recorrer();">Correr</button>
     Hola Pacho
 </body>
 </html>
