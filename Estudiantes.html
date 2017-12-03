@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Gestión Estudiantes</title>
+    <script type="text/javascript">
+    var total = 0
+    /*function ciclo(hasta){/*for (var i = 1; i<=hasta; i++) {
+            total = total + i
+            }
+            total = (hasta+1) * (hasta/2);
+            console.log(total);
+        };*/
+        function imprimir(){
+            var ID = document.getElementById("ID").value;
+            var Nombre = document.getElementById("Nombre").value;
+            var Matricula = document.getElementById("Matricula").value;
+            var Identificacion = document.getElementById("Identificacion").value;
+            var Telefono = document.getElementById("Telefono").value;
+            var EMail = document.getElementById("EMail").value;
+            console.log(ID);
+            console.log(Nombre);
+            console.log(Matricula);
+            console.log(Identificacion);
+            console.log(Telefono);
+            console.log(EMail);
+            /*console.log(Nombre);*/
+        };
+        /*var nombre = "Angel Cordero"
+        console.log(nombre);
+        alert(nombre);
+        ciclo(1000);*/
+        </script>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    ID <input id="ID"><br><br>
+    Nombre <input id="Nombre"><br><br>
+    Matricula <input id="Matricula"><br><br>
+    Identificación <input id="Identificacion"><br><br>
+    Telefono <input id="Telefono"><br><br>
+    Correo <input id="EMail"><br><br>
+    <button onclick="imprimir();">Imprimir</button>
+</body>
+</html>

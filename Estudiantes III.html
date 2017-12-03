@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Gestion Estudiantes</title>
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css"/>
+    <script src="resources/js/estudiantes.js"></script>
+    
+</head>
+<body>
+    
+    <h1>Formulario de Registro</h1>
+    <form>
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="id" class="form-control" id="id" placeholder="ID">
+          </div>
+
+          <div class="form-group">
+            <label for="nombre">Nombre Completo</label>
+            <input type="nombre" class="form-control" id="nombre" placeholder="Nombre">
+          </div>
+
+          <div class="form-group">
+            <label for="matricula">Matricula</label>
+            <input type="matricula" class="form-control" id="matricula" placeholder="Matricula">
+          </div>
+
+          <div class="form-group">
+            <label for="identificacion">Identificacion</label>
+            <input type="identificacion" class="form-control" id="identificacion" placeholder="Identificacion">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Telefonno</label>
+            <input type="telefono" class="form-control" id="telefono" placeholder="Telefono">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electronico</label>
+            <input type="email" class="form-control" id="email" placeholder="Correo Electronico">
+          </div>
+
+
+    </form>
+    <!--ID <input id="id"><br><br>
+    Nombre <input id="nombre"><br><br>
+    Matricula <input id="matricula"><br><br>
+    Identificacion <input id="identificacion"><br><br>
+    Telefono <input id="telefono"><br><br>
+    Correo <input id="email"><br><br>-->
+    <button onclick="imprimir();">Agregar a la Tabla</button>
+    <button onclick="limpiar();">Limpiar Formulario</button>
+    <br><br><br>
+    <table bgcolor = #D6DFE6 border = 1 width = 80% cellspacing = 2 cellpadding = 2 id="estudiantes">
+        <TH>ID</TH>
+        <TH>Nombre</TH>
+        <TH>Matricula</TH>
+        <TH>Identificacion</TH>
+        <TH>Telefono</TH>
+        <TH>Correo Electronico</TH>
+    </table>
+</body>
+</html>

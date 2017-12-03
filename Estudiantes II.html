@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Gestion Estudiantes</title>
+    <script type="text/javascript">
+    var Estudiante = function(){
+        var self = this;
+        self.id="";
+        self.nombre="";
+        self.matricula="";
+        self.identificacion="";
+        self.telefono="";
+        self.email="";
+    };
+    function imprimir(){
+            var id = document.getElementById("id").value;
+            var nombre = document.getElementById("nombre").value;
+            var matricula = document.getElementById("matricula").value;
+            var identificacion = document.getElementById("identificacion").value;
+            var telefono = document.getElementById("telefono").value;
+            var eMail = document.getElementById("email").value;
+            var est1=new Estudiante();
+            est1.id=id;
+            est1.nombre=nombre;
+            est1.matricula=matricula;
+            est1.identificacion=identificacion;
+            est1.telefono=telefono;
+            est1.email=email;
+            console.log(est1);
+        };
+        /*var nombre = "Angel Cordero"
+        console.log(nombre);
+        alert(nombre);
+        ciclo(1000);*/
+        </script>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    ID <input id="id"><br><br>
+    Nombre <input id="nombre"><br><br>
+    Matricula <input id="matricula"><br><br>
+    Identificacion <input id="identificacion"><br><br>
+    Telefono <input id="telefono"><br><br>
+    Correo <input id="email"><br><br>
+    <button onclick="imprimir();">Imprimir</button>
+</body>
+</html>
